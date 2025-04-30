@@ -1,10 +1,29 @@
 <div class="container">
     <div class="navbar-container">
-        <p>Logo</p>
+        <div class="logo">
+            <img src="images/ok.png" alt="LogoImage">
+            PC de dingo
+        </div>
+        
+        <!--
         <div class="searchbar">
+            
             <input type="text" name="recherche" placeholder="Ville recherchée"
             [(ngModel)]="searchValue">
-            <p>{{searchValue}}</p>
+            <p *ngIf="searchValue">{{searchValue}}</p>
+            
+        </div>
+        -->
+        <div class="navbar-items">
+            <div class="item">
+                Conception simple
+            </div>
+            <div class="item">
+                Conception détaillée
+            </div>
+            <div class="item">
+                Nous contacter
+            </div>
         </div>
     </div>
 </div>
