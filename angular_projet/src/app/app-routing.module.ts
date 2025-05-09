@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomePageComponent } from './home-page/home-page.component'
+import { ConceptionSimpleComponent } from './conception-simple/conception-simple.component';
 
 const routes: Routes = [
-  { path: '', component: HomePageComponent }
+  { path: '', component: HomePageComponent },
+  { path: 'conception_simple', component: ConceptionSimpleComponent },
 ];
 
 @NgModule({
