@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Choisir ton PC</title>
+  <link rel="stylesheet" href="conception-simple.component.css"> <!-- Lien vers le fichier CSS externe -->
+</head>
+<body>
+
+  <div class="container">
+    <!-- Progress Bar -->
+    <div class="progress-bar">
+      <div class="progress"></div>
+    </div>
+  
+    <!-- Questions Dynamically Rendered -->
+    <div *ngFor="let q of questions; let i = index" class="question" [ngClass]="{'active': currentQuestion === i + 1}">
+      <div class="question-header">{{ q.header }}</div>
+      <div class="answers">
+        <button
+          *ngFor="let ans of q.answers"
+          class="answer-button"
+          [ngClass]="{'clicked': clickedAnswer === ans}"
+          (click)="handleAnswer(i + 1, ans)"
+          (mouseenter)="markAnswer($event)">
+          {{ ans }}
+        </button>
+      </div>
+    </div>
+  
+    <!-- Navigation Buttons -->
+    <div class="navigation-buttons">
+      <button class="nav-button" (click)="previousQuestion()">Retour</button>
+      <button class="nav-button" (click)="nextQuestionManual()">Suivant</button>
+    </div>
+  </div>
+  
