@@ -15,6 +15,7 @@
     padding: .5rem 2rem .5rem 2rem;
     box-sizing: border-box;
     background-color: var(--primary-color);
+    border-bottom: 1px solid rgb(255, 255, 255);
 }
 
 .logo {
@@ -39,11 +40,11 @@
 }
 
 .navbar-items .nav-button {
-    border-left: 2px solid rgb(0, 0, 0);
+    border-left: 1px solid rgb(255, 255, 255);
 }
 
 .navbar-items .nav-button:last-child {
-    border-right: 2px solid rgb(0, 0, 0);
+    border-right: 1px solid rgb(255, 255, 255);
 }
 
 .nav-button {
@@ -53,11 +54,11 @@
     justify-content: center;
     height: 100%;
     padding: 0 .8rem;
-    color: rgb(0, 0, 0);
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
+}
   
   .nav-button:hover {
-    background-color: rgba(147, 147, 147, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-3px);
   }
