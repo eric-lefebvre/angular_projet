@@ -7,13 +7,19 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FormsModule } from '@angular/forms';
 import { ConceptionSimpleComponent } from './conception-simple/conception-simple.component';
+import { FooterComponent } from './footer/footer.component';
+import { ConceptionDetailleeComponent } from './conception-detaillee/conception-detaillee.component';
+import { NousContacterComponent } from './nous-contacter/nous-contacter.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     NavbarComponent,
-    ConceptionSimpleComponent
+    ConceptionSimpleComponent,
+    FooterComponent,
+    ConceptionDetailleeComponent,
+    NousContacterComponent
   ],
   imports: [
     BrowserModule,

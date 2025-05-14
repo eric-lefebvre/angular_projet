@@ -1,1 +1,67 @@
-<p>conception-simple works!</p>
+<div class="container">
+  <!-- Progress Bar -->
+  <div class="progress-bar">
+    <div class="progress"></div>
+  </div>
+  
+  <!-- Questions -->
+  <div class="question active" id="q1">
+    <div class="question-header titre1">Que fais-tu principalement sur ton PC ?</div>
+    <div class="answers">
+      <button (click)="nextQuestion(2)">Travailler / Étudier</button>
+      <button (click)="nextQuestion(2)">Regarder des vidéos / Films</button>
+      <button (click)="nextQuestion(2)">Jouer à des jeux</button>
+      <button (click)="nextQuestion(2)">Navigation internet</button>
+    </div>
+  </div>
+  
+  <div class="question" id="q2">
+    <div class="question-header titre1">Combien de temps passes-tu sur ton PC chaque jour ?</div>
+    <div class="answers">
+      <button (click)="nextQuestion(3)">Moins de 2 heures</button>
+      <button (click)="nextQuestion(3)">2 à 5 heures</button>
+      <button (click)="nextQuestion(3)">Plus de 5 heures</button>
+    </div>
+  </div>
+  
+  <div class="question" id="q3">
+    <div class="question-header titre1">Ton PC doit-il être transportable ?</div>
+    <div class="answers">
+      <button (click)="nextQuestion(4)">Non, il reste chez moi</button>
+      <button (click)="nextQuestion(4)">Oui, il sera toujours avec moi</button>
+      <button (click)="nextQuestion(4)">Le transporter de temps en temps</button>
+    </div>
+  </div>
+  
+  <div class="question" id="q4">
+    <div class="question-header titre1">Quelle taille d’écran te semble idéale pour ton PC ?</div>
+    <div class="answers">
+      <button (click)="nextQuestion(5)">Moins de 13 pouces (compact)</button>
+      <button (click)="nextQuestion(5)">Entre 13 et 15 pouces (standard)</button>
+      <button (click)="nextQuestion(5)">Plus de 15 pouces (grand écran)</button>
+    </div>
+  </div>
+  
+  <div class="question" id="q5">
+    <div class="question-header titre1">De combien d’espace as-tu besoin ?</div>
+    <div class="answers">
+      <button (click)="nextQuestion(6)">Peu (documents, quelques photos)</button>
+      <button (click)="nextQuestion(6)">Moyen (pas mal de fichiers)</button>
+      <button (click)="nextQuestion(6)">Beaucoup (jeux, vidéos, gros fichiers)</button>
+    </div>
+  </div>
+  
+  <div class="question" id="q6">
+    <div class="question-header titre1">Quel est ton budget pour ton nouveau PC ?</div>
+    <div class="answers">
+      <button (click)="recommendPC()">Moins de 500€</button>
+      <button (click)="recommendPC()">Entre 500€ et 1000€</button>
+      <button (click)="recommendPC()">Plus de 1000€</button>
+    </div>
+  </div>
+  
+  <!-- Navigation Buttons -->
+  <div class="navigation-buttons">
+    <button id="prevBtn" class="nav-button" (click)="previousQuestion()">Retour</button>
+  </div>
+</div>

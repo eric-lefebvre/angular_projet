@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.question {
+    display: none;
+}
+.active {
+    display: block;
+}
+.question-header {
+    margin-bottom: 2rem;
+}
+.answers {
+    margin-bottom: 2rem;
+}
+.answers button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.progress-bar {
+    width: 100%;
+    height: 5px;
+    background-color: #ddd;
+    margin-bottom: 2rem;
+    position: relative;
+}
+.progress {
+    width: 0;
+    height: 100%;
+    background-color: #4caf50;
+}
+.navigation-buttons {
+    margin-bottom: 2rem;
+}
+.nav-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
