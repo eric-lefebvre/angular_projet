@@ -18,12 +18,6 @@
 .answers {
     margin-bottom: 2rem;
 }
-.answers button {
-    padding: 10px 20px;
-    font-size: 16px;
-    margin-right: 10px;
-    cursor: pointer;
-}
 .progress-bar {
     width: 100%;
     height: 5px;
@@ -35,12 +29,4 @@
     width: 0;
     height: 100%;
     background-color: #4caf50;
-}
-.navigation-buttons {
-    margin-bottom: 2rem;
-}
-.nav-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
 }

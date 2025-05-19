@@ -10,6 +10,8 @@ import { ConceptionSimpleComponent } from './conception-simple/conception-simple
 import { FooterComponent } from './footer/footer.component';
 import { ConceptionDetailleeComponent } from './conception-detaillee/conception-detaillee.component';
 import { NousContacterComponent } from './nous-contacter/nous-contacter.component';
+import { BoutonSimpleComponent } from './bouton-simple/bouton-simple.component';
+import { ProduitComponent } from './produit/produit.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { NousContacterComponent } from './nous-contacter/nous-contacter.componen
     ConceptionSimpleComponent,
     FooterComponent,
     ConceptionDetailleeComponent,
-    NousContacterComponent
+    NousContacterComponent,
+    BoutonSimpleComponent,
+    ProduitComponent
   ],
   imports: [
     BrowserModule,
