@@ -12,6 +12,7 @@ import { ConceptionDetailleeComponent } from './conception-detaillee/conception-
 import { NousContacterComponent } from './nous-contacter/nous-contacter.component';
 import { BoutonSimpleComponent } from './bouton-simple/bouton-simple.component';
 import { ProduitComponent } from './produit/produit.component';
+import { RecommandationComponent } from './recommandation/recommandation.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ProduitComponent } from './produit/produit.component';
     ConceptionDetailleeComponent,
     NousContacterComponent,
     BoutonSimpleComponent,
-    ProduitComponent
+    ProduitComponent,
+    RecommandationComponent
   ],
   imports: [
     BrowserModule,

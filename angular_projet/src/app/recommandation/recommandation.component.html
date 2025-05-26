@@ -1,0 +1,73 @@
+<p>recommandation works!</p>
+<div class="container">
+    <div class="recommendation-header titre1">Ta recommandation personnalisée</div>
+  
+    <div class="recommendation-content" *ngIf="recommendation">
+      <ng-container [ngSwitch]="recommendation.type">
+  
+        <!-- Profile 1: Student/Worker -->
+        <div *ngSwitchCase="'student-worker'" class="recommendation-card">
+          <h2>💼 PC pour Études ou Travail</h2>
+          <p>Un PC léger, endurant et fluide pour une utilisation bureautique quotidienne.</p>
+          <ul>
+            <li>Processeur : Intel i5 / Ryzen 5</li>
+            <li>RAM : 8 Go minimum</li>
+            <li>Stockage : SSD 256 Go ou plus</li>
+            <li>Écran : 13-14 pouces pour la portabilité</li>
+          </ul>
+          <p class="budget">💰 Budget conseillé : 500€ - 900€</p>
+        </div>
+  
+        <!-- Profile 2: Gamer -->
+        <div *ngSwitchCase="'gamer'" class="recommendation-card">
+          <h2>🎮 PC Gamer</h2>
+          <p>Des performances élevées pour les jeux récents et une immersion totale.</p>
+          <ul>
+            <li>Processeur : Intel i7 / Ryzen 7</li>
+            <li>Carte graphique : RTX 4060 ou équivalent</li>
+            <li>RAM : 16 Go minimum</li>
+            <li>Stockage : SSD 512 Go + HDD si besoin</li>
+          </ul>
+          <p class="budget">💰 Budget conseillé : 1000€+</p>
+        </div>
+  
+        <!-- Profile 3: Multimedia / Video -->
+        <div *ngSwitchCase="'multimedia'" class="recommendation-card">
+          <h2>🎬 PC Multimédia</h2>
+          <p>Idéal pour regarder des films, naviguer et utiliser quelques applis légères.</p>
+          <ul>
+            <li>Processeur : Intel i3 / Ryzen 3 ou supérieur</li>
+            <li>RAM : 8 Go</li>
+            <li>Stockage : SSD 256 Go</li>
+            <li>Écran : 15 pouces pour le confort visuel</li>
+          </ul>
+          <p class="budget">💰 Budget conseillé : 400€ - 700€</p>
+        </div>
+  
+        <!-- Profile 4: Créateur / Vidéo / Dev -->
+        <div *ngSwitchCase="'creator-dev'" class="recommendation-card">
+          <h2>🧠 PC Créatif / Dev</h2>
+          <p>Une machine puissante pour la création graphique, vidéo ou développement logiciel.</p>
+          <ul>
+            <li>Processeur : Intel i7 / Ryzen 7+</li>
+            <li>RAM : 16 à 32 Go</li>
+            <li>Stockage : SSD 1 To</li>
+            <li>GPU : RTX 3050/4060 ou supérieur pour le rendu</li>
+          </ul>
+          <p class="budget">💰 Budget conseillé : 1000€ - 1500€</p>
+        </div>
+  
+        <!-- Default fallback -->
+        <div *ngSwitchDefault class="recommendation-card">
+          <h2>🤔 Oups !</h2>
+          <p>Aucune configuration claire n’a pu être déterminée. Tu peux refaire le quiz pour affiner les choix !</p>
+        </div>
+  
+      </ng-container>
+    </div>
+  
+    <div class="navigation-buttons">
+      <app-bouton-simple (click)="restartQuiz()" texte="Recommencer le quiz"></app-bouton-simple>
+    </div>
+  </div>
+  

@@ -8,7 +8,7 @@
   <div class="question active" id="q1">
     <div class="question-header titre1">Que fais-tu principalement sur ton PC ?</div>
     <div class="answers">
-      <app-bouton-simple (click)="nextQuestion(2)" texte="Travailler / Étudier"></app-bouton-simple>
+      <app-bouton-simple (click)="nextQuestion(2); selectAnswer(1, 'étudier')" texte="Travailler / Étudier"></app-bouton-simple>
       <app-bouton-simple (click)="nextQuestion(2)" texte="Regarder des vidéos / Films"></app-bouton-simple>
       <app-bouton-simple (click)="nextQuestion(2)" texte="Jouer à des jeux"></app-bouton-simple>
       <app-bouton-simple (click)="nextQuestion(2)" texte="Naviguer internet"></app-bouton-simple>
@@ -54,7 +54,7 @@
   <div class="question" id="q6">
     <div class="question-header titre1">Quel est ton budget pour ton nouveau PC ?</div>
     <div class="answers">
-      <app-bouton-simple (click)="recommendPC()" texte="Moins de 500€"></app-bouton-simple>
+      <app-bouton-simple (click)="selectAnswer(6, 'Moins de 500€'); recommendPC() " texte="Moins de 500€"></app-bouton-simple>
       <app-bouton-simple (click)="recommendPC()" texte="Entre 500€ et 1000€"></app-bouton-simple>
       <app-bouton-simple (click)="recommendPC()" texte="Plus de 1000€"></app-bouton-simple>
     </div>
